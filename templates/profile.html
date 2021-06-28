@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ tname }}</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet"
+        href="{% static 'compny/login/fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'compny/login/css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">{{ tname }}</h2>
+
+                        <div class="form-group">
+
+                            <p>First Name : {{ firstname }}</p>
+                            <p>Last Name    : {{ lastname }}</p>
+                            <p>Email        : {{ email }}</p>
+                            <p>Phone Number : {{ number }}</p>
+                            <p>Address      : {{ address }}</p>
+                            
+                        </div>
+
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="{% static 'compny/login/images/signup-image.jpg' %}" alt="sing up image">
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- JS -->
+        <script src="{% static 'compny/login/vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'compny/login/js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
